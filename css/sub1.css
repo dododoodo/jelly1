@@ -1,0 +1,470 @@
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    overflow-x: hidden;
+    font-family: 'DOSGothic';
+    scroll-behavior: smooth;
+    cursor: url('../img/hand.png') 5 5, auto;
+}
+
+body {
+    background-color: #191825;
+    background-size: 100%;
+    background-position-y: -30%;
+    background-repeat: no-repeat;
+
+}
+
+
+/* menu */
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #191825;
+    z-index: 15;
+}
+
+#gnb-wrapper {
+    position: relative;
+}
+
+#gnb {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background: #fff;
+    /* padding-top: 50px; */
+    font-size: 5rem;
+    list-style: none;
+    overflow: hidden;
+    transition: height 0.5s ease;
+}
+
+#gnb.active {
+    display: block;
+    transition: all .5s ease;
+}
+
+#gnb li {
+    height: 7vw;
+    font-family: 'DOSGothic';
+    font-size: 7vw;
+    padding: 3.2% 7%;
+    border-bottom: 3px solid #000;
+    transition: all .5s ease;
+}
+
+#gnb li:hover {
+    background-color: #191825;
+    color: #fff;
+    border-bottom-color: #000;
+    transition: all .2s ease;
+}
+
+#gnb a {
+    color: #000;
+}
+
+
+.btn_menu {
+    position: relative;
+    width: 30px;
+    height: 1.2vw;
+    cursor: pointer;
+    transition: all .7s ease;
+    z-index: 3;
+}
+
+.btn_menu span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+}
+
+
+.btn_menu span:nth-child(1) {
+    top: 0;
+}
+
+.btn_menu span:nth-child(2) {
+    top: 10px;
+}
+
+.btn_menu span:nth-child(3) {
+    top: 20px;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.btn_menu img {
+    z-index: 11;
+    position: absolute;
+    width: 4vw;
+    top: -4.5vw;
+    left: 88.5vw;
+    transition: transform 0.3s ease;
+}
+
+.btn_menu img:hover {
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+/* section1 */
+
+#pink {
+    color: #FF5F9E;
+}
+
+#sec1 {
+    height: 30vw;
+}
+
+
+#title1 {
+    font-family: 'DOSGothic';
+    margin-top: 19%;
+    width: 85%;
+    padding-left: 8%;
+}
+
+#title1 h1 {
+    font-size: 10vw;
+    color: #fff;
+
+}
+
+#bigtitle {
+    text-align: left;
+}
+
+
+.scroll-img {
+    display: none;
+}
+
+.scroll-img.active {
+    display: block;
+}
+
+#explain1 {
+    text-align: left;
+    margin-top: 5%;
+    margin-left: 7.5%;
+}
+
+#explain1 h3 {
+    font-family: 'DOSGothic';
+    font-size: 4vw;
+    color: #fff;
+}
+
+#explain2 {
+    text-align: right;
+    margin-top: -8%;
+    margin-right: 7%;
+}
+
+#explain2 p {
+    font-family: 'Pretendard';
+    color: #fff;
+    font-size: 1.2vw;
+    line-height: 150%;
+}
+
+/* section2 */
+
+#sec2 {
+    margin-top: 5%;
+    height: 30vw;
+    padding-left: 7%;
+}
+
+.jellies {
+    width: 100%;
+    height: 0;
+}
+
+.jellies img {
+    width: 25%;
+    padding: 3%;
+}
+
+
+/* font */
+
+
+/* button */
+
+.container {
+    position: relative;
+    width: 50%;
+    top: -5%;
+    left: 0;
+    display: flex;
+}
+
+.btn {
+    font-family: 'DOSGothic';
+    font-size: 1.2vw;
+    color: #fff;
+    width: 17%;
+    height: 2.5vw;
+    background: #FF5F9E;
+    position: relative;
+    box-shadow:
+        inset -2px 2px 1px 1px #ff8cba,
+        inset -2px -2px 1px 1px #bd376c,
+        inset 2px 0px 1px 1px #e33178;
+    margin-right: 2%;
+    cursor: pointer;
+}
+
+.btn:active {
+    top: 2px;
+}
+
+.btn::after {
+    content: '';
+    background: #000;
+    position: absolute;
+    left: -2%;
+    top: 0;
+    width: 104%;
+    height: 100%;
+    z-index: -1
+}
+
+.btn::before {
+    content: '';
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: -5%;
+    width: 100%;
+    height: 110%;
+    z-index: -2
+}
+
+/* error */
+
+
+#errors {
+    position: relative;
+    width: 50vw;
+}
+
+.errorpop {
+    opacity: 0;
+    position: absolute;
+    cursor: move;
+}
+
+.error06 {
+    z-index: 1;
+    margin-top: 17%;
+    left: 10%;
+}
+
+.error06 img {
+    width: 26vw;
+}
+
+.error07 {
+    z-index: 1;
+    margin-top: -5%;
+    left: 50%;
+}
+
+.error07 img {
+    width: 24vw;
+}
+
+.error08 {
+    z-index: 1;
+    margin-top: 12%;
+    left: 100%;
+}
+
+.error08 img {
+    width: 24vw;
+}
+
+.error09 {
+    z-index: 1;
+    margin-top: -14%;
+    left: 80%;
+}
+
+.error10 {
+    z-index: 1;
+    margin-top: -15%;
+    left: 5%;
+}
+
+.error11 {
+    z-index: 1;
+    margin-top: 10%;
+    left: 55%;
+}
+
+.error12{
+    z-index: 1;
+    margin-top: -10%;
+    left: 120%;
+}
+
+.error13 {
+    z-index: 1;
+    margin-top: 34%;
+    left: 14%;
+}
+
+.error14{
+    z-index: 1;
+    margin-top: 30%;
+    left: 110%;
+}
+
+.error15 {
+    z-index: 1;
+    margin-top: 41%;
+    left: 35%;
+}
+
+.error16{
+    z-index: 1;
+    margin-top: 30%;
+    left: 62%;
+}
+
+.error17 {
+    z-index: 1;
+    margin-top: 37%;
+    left: 75%;
+}
+.error18 {
+    z-index: 1;
+    margin-top: 45%;
+    left: 123%;
+}
+
+.error09 img {
+    width: 26vw;
+}
+.error10 img {
+    width: 26vw;
+}
+.error11 img {
+    width: 26vw;
+}
+.error12 img {
+    width: 26vw;
+}
+.error13 img {
+    width: 26vw;
+}
+.error14 img {
+    width: 26vw;
+}
+.error15 img {
+    width: 26vw;
+}
+.error16 img {
+    width: 26vw;
+}
+.error17 img {
+    width: 26vw;
+}
+.error18 img {
+    width: 26vw;
+}
+
+/* jelly */
+
+.jellies {
+    cursor: pointer;
+}
+
+.jellies img:hover {
+    opacity: 50%;
+    transition: all .2s ease-in-out;
+    scale: 0.95;
+}
+
+#fruits {
+    z-index: 0;
+    position: relative;
+    left: 40%;
+}
+
+#human {
+    z-index: 0;
+    position: relative;
+    margin-top: 5%;
+    left: 110%;
+}
+
+
+#plants {
+    z-index: 0;
+    position: relative;
+    margin-top: -20%;
+    left: 10%;
+}
+
+
+/* ballon */
+
+.balloon {
+    display: none;
+    position:relative; 
+    width:30%; 
+    background:#fff; 
+    border-radius: 1vw;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    text-align: center;
+    font-size: 0.9vw;
+}
+.balloon:after { 
+    border-top:0px solid transparent; 
+    border-left: 10px solid transparent; 
+    border-right: 10px solid transparent; 
+    border-bottom: 10px solid #fff; 
+    content:""; 
+    position:absolute;
+    top: -15%;
+    left: 80%;  
+}
+
+#under {
+    color: #FF5F9E;
+    text-decoration: underline;
+}

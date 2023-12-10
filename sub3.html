@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도봉이네 젤리가게</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sub3.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <a href="index.html"><img src="./img/logo2.png" alt=""></a>
+                </div>
+            </div>
+            <nav>
+                <div id="gnb-wrapper">
+                    <div class="btn_menu">
+                        <img src="./img/menu1.png" alt="" id="menuImage">
+                    </div>
+                    <ul id="gnb">
+                        <a href="sub1.html">
+                            <li>Types of jelly</li>
+                        </a>
+                        <a href="sub2.html">
+                            <li>When you Eat,</li>
+                        </a>
+                        <a href="sub3.html">
+                            <li>Chilling Delivery</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section id="sec1">
+            <div id="title1">
+                <div id="bigtitle">
+                    <h1>Chilling <span id="pink">Delivery</span></h1>
+                </div>
+            </div>
+
+            <div id="explain1">
+                <h3>오싹한 <span id="pink">배송</span></h3>
+            </div>
+
+            <div id="explain2">
+                <p>등골이 오싹할 정도로 빠르게 젤리를 배송해드립니다! <br> 원하는 젤리를 지금 당장 배송으로 만나보세요. </p>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div id="user-form">
+                <h3>1. Enter your <span id="pink">name.</span> | 본인의 <span id="pink">이름</span>을 작성해주세요.</h3>
+                <div id="uscon">
+                    <input type="text" placeholder="Please enter your name." id="nick">
+                </div>
+                <div id="uscon">
+                    <h3 for="gender">2. Register your <span id="pink">email.</span> | 본인의 <span id="pink">이메일을</span>
+                        등록해주세요.</span></h3><br>
+                    <input type="email" placeholder="Please register your email." id="email">
+                </div>
+                <div id="uscon">
+                    <h3 for="gender">3. Enter your <span id="pink">address</span> | 본인의 <span id="pink">주소를</span>
+                        작성해주세요.</span></h3><br>
+                    <input type="text" placeholder="Please enter your address." id="password">
+                </div>
+                <div id="uscon">
+                    <h3 for="gender">4. Pick the <span id="pink">jelly</span> | 원하는 <span id="pink">젤리를</span>
+                        선택해주세요.</span></h3>
+                </div>
+
+                <input id="banana" type="radio" name="jelly" value="banana" data-img="./img/banana.png" checked> 바나나 젤리
+                <input id="whale" type="radio" name="jelly" value="whale" data-img="./img/whale.png"> 짱돌고래 젤리
+                <input id="inbtn" type="radio" name="jelly" value="flower" data-img="./img/plants.png"> 해바라기 젤리 <br>
+                <input id="inbtn" type="radio" name="jelly" value="apple" data-img="./img/apple.png"> 사과 젤리
+                <input id="inbtn" type="radio" name="jelly" value="cater" data-img="./img/cater.png"> 구더기 젤리
+                <input id="inbtn" type="radio" name="jelly" value="baby" data-img="./img/human.png"> 아기 젤리
+                <div id="preview" style="position: absolute; visibility: hidden;"></div>
+
+                <div class="container">
+                    <button class="btn">배송 등록하기</button>
+                </div>
+                </form>
+            </div>
+        </section>
+
+
+
+    </div>
+    <script>
+
+        document.querySelector('.btn').addEventListener('click', function () {
+            alert('[도봉이네 젤리가게] - 오싹배송 접수가 완료되었습니다.');
+        });
+    </script>
+    <script src="./js/index.js"></script>
+</body>
+
+</html>

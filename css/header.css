@@ -1,0 +1,32 @@
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    
+}
+
+.navbar__logo {
+    margin-top: 1%;
+    margin-left: 7%;
+}
+
+.navbar__logo img {
+    width: 10vw;
+    transition: transform 0.3s ease;
+}
+
+.navbar__logo img:hover {
+    transform: scale(1.2);
+}

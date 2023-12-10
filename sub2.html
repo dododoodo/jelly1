@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>도봉이네 젤리가게</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/sub2.css">
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <!-- script -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header>
+            <div class="navbar">
+                <div class="navbar__logo">
+                    <a href="index.html"><img src="./img/logo2.png" alt=""></a>
+                </div>
+            </div>
+            <nav>
+                <div id="gnb-wrapper">
+                    <div class="btn_menu">
+                        <img src="./img/menu1.png" alt="" id="menuImage">
+                    </div>
+                    <ul id="gnb">
+                        <a href="sub1.html">
+                            <li>Types of jelly</li>
+                        </a>
+                        <a href="sub2.html">
+                            <li>When you eat</li>
+                        </a>
+                        <a href="sub3.html">
+                            <li>Chilling delivery</li>
+                        </a>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <section id="sec1">
+            <div id="title1">
+                <div id="bigtitle">
+                    <h1>When you <span id="pink">Eat,</span></h1>
+                </div>
+            </div>
+
+            <div id="explain1">
+                <h3>이럴 때 <span id="pink">드세요!</span></h3>
+            </div>
+
+            <div id="explain2">
+                <p>저희 가게의 젤리들은 다른 젤리들과 다르기 때문에, 젤리를 먹어야 될 때와 장소, 방법이 다릅니다.<br> 같이 첨부한 주의사항을 꼭 읽고 젤리를 즐기시길 바랍니다.</p>
+            </div>
+        </section>
+
+        <section id="sec2">
+            <div class="sticky-parent">
+                <div class="sticky">
+                    <div class="horizontal">
+                        <div class="dim">
+                            <div class="textbox">
+                                <h1>1.</h1>
+                                <h2>" 우리 젤리들, 언제 먹을까요? "</h2>
+                                <h3>1. 아이들 간식으로!</h3>
+                                <img id="banana" src="./img/31.gif" alt="">
+                                <h4>[살아 있는] 바나나 젤리 ☆</h4>
+                                <p>아이들이 정말 좋아하는 바나나 우유맛 젤리입니다.<br>사정없이 껍질을 쥐어 뜯어서 크게 한입 베어 물어 보세요!<br>꿈틀꿈틀 살아 움직이는 생생함이 그대로 전달됩니다! <br> 아이들이 정말 좋아해요.</p>
+                            </div>
+                        </div>
+                        <div class="dim">
+                            <div class="textbox">
+                                <h1>2.</h1>
+                                <h2>" 우리 젤리들, 언제 먹을까요? "</h2>
+                                <h3>2. 단백칠 보충식으로,</h3>
+                                <img id="bir" src="./img/32.gif" alt="">
+                                <h4>[마당에서 채집한] 구더기 젤리 ◈</h4>
+                                <p>헬짱들은 단백질 음식을 정말 찾아다니는데요,<br>이 구더기 젤리에는 한 마리의 젤리만 먹어도 50g이라는 어마무시한 단백질이 가득!<br>고소한 풍미와 톡톡 터지는 식감까지 일석이조랍니다.</p>
+                            </div>
+                        </div>
+                        <div class="dim">
+                            <div class="textbox">
+                                <h1>3.</h1>
+                                <h2>" 우리 젤리들, 언제 먹을까요? "</h2>
+                                <h3>3. 건강을 위한 보양식으로</h3>
+                                <img id="bir" src="./img/33.gif" alt="">
+                                <h4>[멸종위기종] 짱돌고래 ♡</h4>
+                                <p>위, 장, 관절 건강에 고루 좋다는 짱돌고래를<br>저희 젤리가게가 어렵게 입수하여 만든 돌고래 젤리입니다.<br> 멸종 위기 동물 포획범으로 경찰에 잡힐 수도 있으니, 빨리 드세요!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        window.addEventListener('scroll', function () {
+            const title = document.querySelector('#bigtitle');
+            const scale = Math.max(0.5, 1 - window.scrollY / 1500);
+            title.style.transform = `scale(${scale})`;
+            title.style.transformOrigin = 'left';
+        });
+    </script>
+    <script src="./js/index.js"></script>
+    <script src="./js/horizontal.js"></script>
+</body>
+
+</html>

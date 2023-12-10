@@ -1,0 +1,251 @@
+
+@font-face {
+    font-family: 'DOSGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_eight@1.0/DOSGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Orbit-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/Orbit-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    cursor: url('../img/hand.png') 5 5, auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+body {
+    background-color: #191825;
+    background-size: 100%;
+    background-position-y: -30%;
+    background-repeat: no-repeat;
+
+}
+
+#main1 {
+    background-image: url('../img/windowbg.png');
+    background-repeat: no-repeat;
+    background-size: 114%;
+    background-position-x: 21%;
+    background-position-y: 28%;
+    position: relative;
+    height: 39vw;
+    margin: -1% 7%;
+    text-align: center;
+}
+
+#text1 {
+    font-size: 1vw;
+    margin-top: 2%;
+    color: #fff;
+    font-family: 'Pretendard';
+    text-align: left;
+    padding-left: 7%;
+    line-height: 180%;
+}
+
+#text1 h4 {
+    font-family: 'DOSGothic';
+    margin: 5% 42.5%;
+    font-size: 1.7vw;
+    color: #FF5F9E;
+    animation: blink 0.4s infinite alternate;
+}
+
+@keyframes blink {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+.main1 h3 {
+    font-size: 1.1vw;
+    color: #fff;
+}
+
+#box {
+    text-align: left;
+    padding: 8% 0 0 7%;
+}
+
+#box .text {
+    font-family: 'DOSGothic';
+    font-size: 6vw;
+}
+
+/* menu */
+
+#gnb-wrapper {
+    position: relative;
+}
+
+#gnb {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0; 
+    background: #fff;
+    /* padding-top: 50px; */
+    font-size: 5rem;
+    list-style: none;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    z-index: 10;
+}
+
+#gnb.active {
+    display: block;
+    transition: all .5s ease;
+}
+
+#gnb li {
+    height: 7vw;
+    font-family: 'DOSGothic';
+    font-size: 7vw;
+    padding: 3.2% 7%;
+    border-bottom: 3px solid #000;
+    transition: all .5s ease;
+}
+
+#gnb li:hover {
+    background-color: #191825;
+    color: #fff;
+    border-bottom-color: #000;
+    transition: all .2s ease;
+}
+
+#gnb a {
+    color: #000;
+}
+
+
+.btn_menu {
+    position: relative;
+    width: 30px;
+    height: 1.2vw;
+    cursor: pointer;
+    transition: all .7s ease;
+    z-index: 3;
+}
+
+.btn_menu span {
+    display: block;
+    width: 40px;
+    height: 3px;
+    position: absolute;
+    left: 0;
+}
+
+
+.btn_menu span:nth-child(1) {
+    top: 0;
+}
+
+.btn_menu span:nth-child(2) {
+    top: 10px;
+}
+
+.btn_menu span:nth-child(3) {
+    top: 20px;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    99% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.btn_menu img {
+    z-index: 11;
+    position: absolute;
+    width: 4vw;
+    top: -4.5vw;
+    left: 88.5vw;
+    transition: transform 0.3s ease;
+}
+
+.btn_menu img:hover {
+    z-index: 11;
+    transform: scale(1.2);
+}
+
+#errors {
+    position: relative;
+    width: 50vw;
+}
+
+.errorpop {
+    opacity: 0;
+    position: absolute;
+    cursor: move;
+}
+
+.error01 {
+    margin-top: -65%;
+    left: 120%;
+}
+
+.error01 img {
+    width: 13vw;
+}
+
+.error02 {
+    margin-top: -55%;
+    left: 150%;
+}
+
+.error02 img {
+    width: 13vw;
+}
+
+.error03 {
+    margin-top: -50%;
+    left: 132%;
+}
+
+.error03 img {
+    width: 13vw;
+}
+
+.error04 {
+    margin-top: -30%;
+    left: 120%;
+}
+
+.error04 img {
+    width: 13vw;
+}
+
+.error05 {
+    margin-top: -35%;
+    left: 140%;
+}
+
+.error05 img {
+    width: 13vw;
+}
+
+.error06 {
+    margin-top: -25%;
+    left: 150%;
+}
+
+.error06 img {
+    width: 13vw;
+}

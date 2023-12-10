@@ -1,0 +1,125 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>도봉이네 젤리가게</title>
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/sub1.css">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <!-- script -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    </head>
+
+    <body>
+        <div class="wrap">
+            <!-- 헤더 -->
+            <header>
+                <div class="navbar">
+                    <div class="navbar__logo">
+                        <a href="index.html"><img src="./img/logo2.png" alt=""></a>
+                    </div>
+                </div>
+                <div id="gnb-wrapper">
+                    <div class="btn_menu">
+                        <img src="./img/menu1.png" alt="" id="menuImage">
+                    </div>
+                    <ul id="gnb">
+                        <a href="sub1.html">
+                            <li>Types of jelly</li>
+                        </a>
+                        <a href="sub2.html">
+                            <li>When you eat</li>
+                        </a>
+                        <a href="sub3.html">
+                            <li>Chilling delivery</li>
+                        </a>
+                    </ul>
+                </div>
+            </header>
+
+            <section id="sec1">
+                <div id="title1">
+                    <div id="bigtitle">
+                        <h1>Types of <span id="pink">Jelly</span></h1>
+                    </div>
+                </div>
+                <div id="explain1">
+                    <h3>젤리 종류가 <br> <span id="pink">궁금해</span></h3>
+                </div>
+                <div id="explain2">
+                    <p>저희 도봉이네 젤리가게는 다른 곳에선 전혀 보지 못했던 색다른 젤리를 직접 만들어 판매합니다. <br> 다양한 젤리를 구경하고, 원하는 젤리가 있다면 지금 바로 구매하세요! <br>
+                        이런! 젤리가 보이지 않을 시에는 <span id="under">방해요소를 마우스 드래그로</span> 치워보세요.</p>
+                </div>
+            </section>
+
+            <section id="sec2">
+                <div id="errors">
+                    <div class="errorpop error06"><img src="./img/error06.png" alt=""></div>
+                    <div class="errorpop error07"><img src="./img/error07.png" alt=""></div>
+                    <div class="errorpop error07"><img src="./img/error07.png" alt=""></div>
+                    <div class="errorpop error08"><img src="./img/error08.png" alt=""></div>
+                    <div class="errorpop error09"><img src="./img/error09.png" alt=""></div>
+                    <div class="errorpop error10"><img src="./img/error10.png" alt=""></div>
+                    <div class="errorpop error10"><img src="./img/error10.png" alt=""></div>
+                    <div class="errorpop error11"><img src="./img/error11.png" alt=""></div>
+                    <div class="errorpop error11"><img src="./img/error11.png" alt=""></div>
+                    <div class="errorpop error12"><img src="./img/error12.png" alt=""></div>
+                    <div class="errorpop error12"><img src="./img/error12.png" alt=""></div>
+                    <div class="errorpop error13"><img src="./img/error13.png" alt=""></div>
+                    <div class="errorpop error14"><img src="./img/error14.png" alt=""></div>
+                    <div class="errorpop error15"><img src="./img/error15.png" alt=""></div>
+                    <div class="errorpop error17"><img src="./img/error17.png" alt=""></div>
+                    <div class="errorpop error17"><img src="./img/error17.png" alt=""></div>
+                    <div class="errorpop error16"><img src="./img/error16.png" alt=""></div>
+                    <div class="errorpop error16"><img src="./img/error16.png" alt=""></div>
+                    <div class="errorpop error18"><img src="./img/error18.png" alt=""></div>
+                    <div class="jellies">
+                        <div id="fruits">
+                            <img src="./img/fruits.png" alt="">
+                            <div class="balloon">안녕 난 과일 젤리야. <br> 과일이고 젤리지만 말을 할 수 있지 <br> 날 먹지마 제발 부탁할게..</div>
+                        </div>
+                        <div id="human">
+                            <img src="./img/human.png" alt="">
+                            <div class="balloon">저기요 저 좀 구해주세요!! <br> 납치 당해서 정신을 들어보니 <br> 제가 젤리가 되어 있었어요..</div>
+                        </div>
+                        <div id="plants">
+                            <img src="./img/plants.png" alt="">
+                            <div class="balloon">있잔아..나는 외래종 식물젤린데 <br> 바로 즉사하는 독이 있거든 <br> 이래도 나 먹을거야?</div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+        <script>
+            
+
+            window.onload = function () {
+
+                // button
+                var buttons = document.querySelectorAll('.btn');
+
+                buttons.forEach(function (button) {
+                    var originalText = button.innerText;
+                    var hoverText = button.getAttribute('data-hover-text');
+
+                    button.addEventListener('mouseover', function () {
+                        button.innerText = hoverText;
+                    });
+
+                    button.addEventListener('mouseout', function () {
+                        button.innerText = originalText;
+                    });
+                });
+            }
+        </script>
+        <script src="./js/index.js"></script>
+    </body>
+
+    </html>
